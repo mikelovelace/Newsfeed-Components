@@ -87,6 +87,15 @@ const data = [
           Hodor hodor, HODOR hodor, hodor hodor?! Hodor! Hodor hodor, HODOR hodor, hodor hodor, hodor, hodor hodor. Hodor, hodor.
           Hodor. Hodor, hodor, hodor. Hodor hodor... Hodor hodor hodor?! Hodor, hodor... Hodor hodor HODOR hodor, hodor hodor. Hodor.`,
   },
+  {
+    title: "All About DOM Components",
+    date: "Mar 16th, 2021",
+    firstParagraph: `A component is made of several parts: HTML, CSS, or JavaScript brought together for reuse in a website or application. A component is made of several parts: HTML, CSS, or JavaScript brought together for reuse in a website or application. A component is made of several parts: HTML, CSS, or JavaScript brought together for reuse in a website or application. A component is made of several parts: HTML, CSS, or JavaScript brought together for reuse in a website or application.`,
+
+    secondParagraph: `Writing CSS for components is more about rationale than syntax. Components should be modular or stand-alone. With that in mind, you should try to think of your component CSS in a way that could be moved around at any moment and not reliant on any other styles being in place. Writing CSS for components is more about rationale than syntax. Components should be modular or stand-alone. With that in mind, you should try to think of your component CSS in a way that could be moved around at any moment and not reliant on any other styles being in place. `,
+
+    thirdParagraph: `JavaScript is used to consume the data and output the content into the DOM. JavaScript's involvement in components is the glue that ties everything together. We can use Javascript to consume the HTML and return a component version of it! The how-to of JavaScript will be explained in greater detail throughout the rest of our objectives. JavaScript is used to consume the data and output the content into the DOM. JavaScript's involvement in components is the glue that ties everything together. We can use Javascript to consume the HTML and return a component version of it! The how-to of JavaScript will be explained in greater detail throughout the rest of our objectives.`,
+  },
 ];
 
 /*
