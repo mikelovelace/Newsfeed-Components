@@ -33,27 +33,32 @@ let menuItems = [
 */
 
 function menuMaker(links) {
-  const menuContainer = document.createElement("div");
+  const menuContainer = document.createElement("div"); // menu container
   menuContainer.classList.add("menu");
 
-  const unorderedList = document.createElement("ul");
-  menuContainer.append(unorderedList)
-
-  const menuButton = document.querySelector(".menu-button")
+  const unorderedList = document.createElement("ul"); // link container
+  menuContainer.append(unorderedList);
 
   links.forEach((link) => {
+    // menu links
     const listItem = document.createElement("li");
-    unorderedList.append(listItem)
+    unorderedList.append(listItem);
+
+    const anchors = document.createElement("a");
+    anchors.setAttribute("href", "#");
+    anchors.textContent = link;
+    anchors.style.textDecoration = "none";
+    anchors.style.color = "#000";
+    listItem.append(anchors);
   });
 
-  
-
+  const menuButton = document.querySelector(".menu-button");
   menuButton.addEventListener("click", () => {
-    menuContainer.classList.toggle("menu--open")
-  })
+    menuContainer.classList.toggle("menu--open");
+  });
 
-  return menuContainer
+  return menuContainer;
 }
 
-const header = document.querySelector(".header")
-header.append(menuMaker(menuItems))
+const header = document.querySelector(".header");
+header.append(menuMaker(menuItems));
